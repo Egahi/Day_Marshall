@@ -1,5 +1,5 @@
 /**
- * DAYMARSHALl.cpp
+ * dayMarshall.cpp
  *
  * this program demands the date from a user (month/day/year)
  * then outputs the day it is in the year.
@@ -7,7 +7,7 @@
  *
  * @s_egahi
  *
- * this is DAYMARSHALL
+ * this is day marshall
  */
 
 #include <iostream>
@@ -22,14 +22,21 @@ int main(void)
     
     do
     {
+        // welcomes user
         welcomeUser();
         
+        // gets valid date from user
         getDate(&month, &day, &year);
         
+        // calculates the day it falls in the year
         calcDay(month, day, year, &yDay);
         
+        // displays result
         printInfo(month, day, year, yDay);
+        
+     // prompt for another operation
     } while(runAgain());
     
+    // success
     return 0;
 }
